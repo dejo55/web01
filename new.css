@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  
+    
+}
+
+
+nav{
+    background-color: black;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    padding: 5px;
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    background-color: rgb(12, 1, 1);
+    margin: 0 0px;
+    padding: 5px;
+}
+
+nav ul li a{
+    color: azure;
+    line-height: 75px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover{
+
+    border-radius:5px ;
+    color: aqua;
+box-shadow: 2px 3px beige, 1px 1px 0px 1.5px red;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility:hidden ;
+    transform: 0.3s;
+
+}
+
+
+nav ul ul li a{
+    line-height: 50px;
+}
+
+nav ul ul li {
+   position: relative;
+    display:list-item;
+margin: 0;
+float:none;
+width: 150px;
+border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+
+nav ul ul ul li{
+    position: relative;
+    top: -75px;
+    left: 140px;
+    
+}
+
+
+nav ul li:hover > ul{
+    opacity: 1;
+    top: 85px;
+    visibility: visible;
+}
